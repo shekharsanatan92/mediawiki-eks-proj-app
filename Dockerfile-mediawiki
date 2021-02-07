@@ -1,0 +1,12 @@
+FROM 746103488160.dkr.ecr.us-east-1.amazonaws.com/ss-docker-repo:latest
+
+COPY mediawikiconfig.sh /mediawikiconfig.sh
+COPY httpd.sh /httpd.sh
+
+RUN chmod +x /httpd.sh
+RUN chmod +x /mediawikiconfig.sh
+RUN chown -R apache:apache /var/www/html
+RUN /mediawikiconfig.sh
+RUN chmod +x /var/www/html/LocalSettings.php
+
+CMD ["/httpd.sh"]
