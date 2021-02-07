@@ -2,15 +2,15 @@
 
 #########################################
 
-Code Format: YAML + Bash
+**Code Format**: YAML + Bash
 
-Tech Stack: EKS + Helm + Jenkins
+**Tech Stack**: EKS + Helm + Jenkins
 
 ##########################################
 
 This project uses Jenkins pipeline to deploy Mediawiki onto EKS using Helm
 
-Setup:
+## Setup:
 
 Clone this repository and navigate to the script file mediawikiconfig.sh. This file consists of configuration paraeters required for MediaWiki. Place the required parameters in the file and save. Build triggers flow through Jenkins server. 
 
@@ -20,3 +20,5 @@ Jenkins pipeline has below stages:
 3. Configuration of Mediawiki and image update in EKS
 
 Note: Replace fields with ######### with own in mediawikiconfig.sh file
+
+> Refer Mediawiki infra repository (https://github.com/shekharsanatan92/mediawiki-eks-proj-app.git) for information on provisioning infra resources on AWS
