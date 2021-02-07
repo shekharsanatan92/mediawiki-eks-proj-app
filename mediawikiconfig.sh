@@ -3,16 +3,18 @@
 set -e
 
 # Some defaults
+# Replace (#########) parameters with own
+
 : ${MEDIAWIKI_SITE_SERVER:=http://localhost:8080}
 : ${MEDIAWIKI_SITE_NAME:=Hello}
 : ${MEDIAWIKI_SITE_LANG:=en}
 : ${MEDIAWIKI_ADMIN_USER:=wiki}
-: ${MEDIAWIKI_ADMIN_PASS:=mediawiki123456}
+: ${MEDIAWIKI_ADMIN_PASS:=########}
 : ${MEDIAWIKI_DB_NAME:=wikidatabase}
 : ${MEDIAWIKI_DB_TYPE:=mysql}
 : ${MEDIAWIKI_DB_PORT:=3306}
 : ${MEDIAWIKI_DB_SCHEMA:=wikidatabase}
-: ${MEDIAWIKI_DB_HOST:=wikidatabase.cnbvr1aru5et.us-east-1.rds.amazonaws.com}
+: ${MEDIAWIKI_DB_HOST:=########}
 : ${MEDIAWIKI_DB_USER:=wiki}
 : ${MEDIAWIKI_DB_PASSWORD:=mediawiki}
 : ${MEDIAWIKI_UPDATE:=false}
