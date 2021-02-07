@@ -19,6 +19,7 @@ Jenkins pipeline has below stages:
 2. Deploy the base image onto EKS - Since we do not have DNS records at this time, we deploy the base image to obtain the service IP (LoadBalancer) to access MediaWiki
 3. Configuration of Mediawiki and image update in EKS
 
-Note: Replace fields with ######### with own in mediawikiconfig.sh file
+**Note: Replace fields with ######### with own in mediawikiconfig.sh file**
 
-> Refer Mediawiki infra repository (https://github.com/shekharsanatan92/mediawiki-eks-proj-app.git) for information on provisioning infra resources on AWS
+> Refer the below Mediawiki infra repository for information on provisioning infra resources on AWS:
+> https://github.com/shekharsanatan92/mediawiki-eks-proj-app.git
